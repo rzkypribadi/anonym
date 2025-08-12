@@ -1,0 +1,15 @@
+[[redirects]]
+  from = "/:username"
+  to = "/[username]"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https:; font-src 'self';"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "ZKY"
+
+[build]
+  command = "npm run build"
+  publish = "out"
