@@ -28,7 +28,7 @@ export default function KirimPesan() {
 
         <div className="ajakan-box">
           <p>
-            <a href="/register" className="link-biru">
+            <a href="/index" className="link-biru">
               🔗 Buat link sepertiku!
             </a>
             <br />
@@ -54,12 +54,12 @@ export default function KirimPesan() {
         <textarea
           value={pesan}
           onChange={(e) => setPesan(e.target.value)}
-          placeholder="Tulis pesanmu di sini..."
-          maxLength="500"
+          placeholder="Tulis pesan di sini..."
+          maxLength="1500"
           required
         />
         <button type="submit">Kirim Pesan</button>
       </form>
     </div>
   );
-            }
+}
